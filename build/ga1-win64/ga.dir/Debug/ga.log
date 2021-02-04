@@ -1,0 +1,17 @@
+﻿  Building Custom Rule C:/Users/Dom/Documents/GameArch/homework-1-queuing-dfavs00/src/engine/CMakeLists.txt
+  ga_component.cpp
+  ga_entity.cpp
+  ga_hello_component.cpp
+  ga_input.cpp
+  ga_output.cpp
+  ga_sim.cpp
+  ga_condvar.cpp
+  ga_fiber.cpp
+  ga_intpool.cpp
+  ga_job.cpp
+  ga_queue.cpp
+  ga_queue.tests.cpp
+  main.cpp
+  Generating Code...
+     Creating library C:/Users/Dom/Documents/GameArch/homework-1-queuing-dfavs00/build/ga1-win64/Debug/ga.lib and object C:/Users/Dom/Documents/GameArch/homework-1-queuing-dfavs00/build/ga1-win64/Debug/ga.exp
+  ga.vcxproj -> C:\Users\Dom\Documents\GameArch\homework-1-queuing-dfavs00\build\ga1-win64\Debug\ga.exe

@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\ameree\Downloads\ga2017-homework1-20200107T023108Z-001\ga2020-homework1\build\ga1-win64\CMakeFiles\0d7f57a9ca27e0ac578953dfdf56d1be\generate.stamp.rule">
+    <CustomBuild Include="C:\Users\Dom\Documents\GameArch\homework-1-queuing-dfavs00\build\ga1-win64\CMakeFiles\612734aa9cca3d8332a8a0a5032dbb4c\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{CD210BD4-9A4C-3A81-8E4A-4BE6BEA35DAA}</UniqueIdentifier>
+      <UniqueIdentifier>{F9FAC6B5-BB74-38F1-9BBC-9D4A8EF96DA1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

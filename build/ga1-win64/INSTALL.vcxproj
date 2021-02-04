@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{B934EC01-A5A9-3999-AB02-27AC9CD2ED8B}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectGuid>{A1F38E37-D70A-3644-8BE7-96C699F1A7CC}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>INSTALL</ProjectName>
@@ -63,7 +63,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\ameree\Downloads\ga2017-homework1-20200107T023108Z-001\ga2020-homework1\build\ga1-win64\SDL2-2.0.5\include;C:\Users\ameree\Downloads\ga2017-homework1-20200107T023108Z-001\ga2020-homework1\src\engine\..\3rdparty\SDL2-2.0.5\include;C:\Users\ameree\Downloads\ga2017-homework1-20200107T023108Z-001\ga2020-homework1\src\3rdparty\glew-2.0.0\include;C:\Users\ameree\Downloads\ga2017-homework1-20200107T023108Z-001\ga2020-homework1\src\engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Dom\Documents\GameArch\homework-1-queuing-dfavs00\build\ga1-win64\SDL2-2.0.5\include;C:\Users\Dom\Documents\GameArch\homework-1-queuing-dfavs00\src\engine\..\3rdparty\SDL2-2.0.5\include;C:\Users\Dom\Documents\GameArch\homework-1-queuing-dfavs00\src\3rdparty\glew-2.0.0\include;C:\Users\Dom\Documents\GameArch\homework-1-queuing-dfavs00\src\engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -85,7 +85,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\ameree\Downloads\ga2017-homework1-20200107T023108Z-001\ga2020-homework1\build\ga1-win64\SDL2-2.0.5\include;C:\Users\ameree\Downloads\ga2017-homework1-20200107T023108Z-001\ga2020-homework1\src\engine\..\3rdparty\SDL2-2.0.5\include;C:\Users\ameree\Downloads\ga2017-homework1-20200107T023108Z-001\ga2020-homework1\src\3rdparty\glew-2.0.0\include;C:\Users\ameree\Downloads\ga2017-homework1-20200107T023108Z-001\ga2020-homework1\src\engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Dom\Documents\GameArch\homework-1-queuing-dfavs00\build\ga1-win64\SDL2-2.0.5\include;C:\Users\Dom\Documents\GameArch\homework-1-queuing-dfavs00\src\engine\..\3rdparty\SDL2-2.0.5\include;C:\Users\Dom\Documents\GameArch\homework-1-queuing-dfavs00\src\3rdparty\glew-2.0.0\include;C:\Users\Dom\Documents\GameArch\homework-1-queuing-dfavs00\src\engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -107,7 +107,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\ameree\Downloads\ga2017-homework1-20200107T023108Z-001\ga2020-homework1\build\ga1-win64\SDL2-2.0.5\include;C:\Users\ameree\Downloads\ga2017-homework1-20200107T023108Z-001\ga2020-homework1\src\engine\..\3rdparty\SDL2-2.0.5\include;C:\Users\ameree\Downloads\ga2017-homework1-20200107T023108Z-001\ga2020-homework1\src\3rdparty\glew-2.0.0\include;C:\Users\ameree\Downloads\ga2017-homework1-20200107T023108Z-001\ga2020-homework1\src\engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Dom\Documents\GameArch\homework-1-queuing-dfavs00\build\ga1-win64\SDL2-2.0.5\include;C:\Users\Dom\Documents\GameArch\homework-1-queuing-dfavs00\src\engine\..\3rdparty\SDL2-2.0.5\include;C:\Users\Dom\Documents\GameArch\homework-1-queuing-dfavs00\src\3rdparty\glew-2.0.0\include;C:\Users\Dom\Documents\GameArch\homework-1-queuing-dfavs00\src\engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -129,7 +129,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\ameree\Downloads\ga2017-homework1-20200107T023108Z-001\ga2020-homework1\build\ga1-win64\SDL2-2.0.5\include;C:\Users\ameree\Downloads\ga2017-homework1-20200107T023108Z-001\ga2020-homework1\src\engine\..\3rdparty\SDL2-2.0.5\include;C:\Users\ameree\Downloads\ga2017-homework1-20200107T023108Z-001\ga2020-homework1\src\3rdparty\glew-2.0.0\include;C:\Users\ameree\Downloads\ga2017-homework1-20200107T023108Z-001\ga2020-homework1\src\engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Dom\Documents\GameArch\homework-1-queuing-dfavs00\build\ga1-win64\SDL2-2.0.5\include;C:\Users\Dom\Documents\GameArch\homework-1-queuing-dfavs00\src\engine\..\3rdparty\SDL2-2.0.5\include;C:\Users\Dom\Documents\GameArch\homework-1-queuing-dfavs00\src\3rdparty\glew-2.0.0\include;C:\Users\Dom\Documents\GameArch\homework-1-queuing-dfavs00\src\engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -150,7 +150,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\ameree\Downloads\ga2017-homework1-20200107T023108Z-001\ga2020-homework1\build\ga1-win64\CMakeFiles\0d7f57a9ca27e0ac578953dfdf56d1be\INSTALL_force.rule">
+    <CustomBuild Include="C:\Users\Dom\Documents\GameArch\homework-1-queuing-dfavs00\build\ga1-win64\CMakeFiles\612734aa9cca3d8332a8a0a5032dbb4c\INSTALL_force.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
 cd .
@@ -162,7 +162,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ameree\Downloads\ga2017-homework1-20200107T023108Z-001\ga2020-homework1\build\ga1-win64\CMakeFiles\INSTALL_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Dom\Documents\GameArch\homework-1-queuing-dfavs00\build\ga1-win64\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
@@ -175,7 +175,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\ameree\Downloads\ga2017-homework1-20200107T023108Z-001\ga2020-homework1\build\ga1-win64\CMakeFiles\INSTALL_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Dom\Documents\GameArch\homework-1-queuing-dfavs00\build\ga1-win64\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
@@ -188,7 +188,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\ameree\Downloads\ga2017-homework1-20200107T023108Z-001\ga2020-homework1\build\ga1-win64\CMakeFiles\INSTALL_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Dom\Documents\GameArch\homework-1-queuing-dfavs00\build\ga1-win64\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
@@ -201,19 +201,19 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\ameree\Downloads\ga2017-homework1-20200107T023108Z-001\ga2020-homework1\build\ga1-win64\CMakeFiles\INSTALL_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Dom\Documents\GameArch\homework-1-queuing-dfavs00\build\ga1-win64\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\ameree\Downloads\ga2017-homework1-20200107T023108Z-001\ga2020-homework1\build\ga1-win64\ZERO_CHECK.vcxproj">
-      <Project>{FEA39B12-3FCD-3DB5-B3ED-BF8172586D48}</Project>
+    <ProjectReference Include="C:\Users\Dom\Documents\GameArch\homework-1-queuing-dfavs00\build\ga1-win64\ZERO_CHECK.vcxproj">
+      <Project>{D936AD91-315E-31AB-8DBB-4A4066C4C2A6}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\ameree\Downloads\ga2017-homework1-20200107T023108Z-001\ga2020-homework1\build\ga1-win64\ALL_BUILD.vcxproj">
-      <Project>{FDCBB756-DCE0-3E56-861D-8677CE5AD9F5}</Project>
+    <ProjectReference Include="C:\Users\Dom\Documents\GameArch\homework-1-queuing-dfavs00\build\ga1-win64\ALL_BUILD.vcxproj">
+      <Project>{547DB916-3AA2-3A19-B58F-69A7B469F46D}</Project>
       <Name>ALL_BUILD</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

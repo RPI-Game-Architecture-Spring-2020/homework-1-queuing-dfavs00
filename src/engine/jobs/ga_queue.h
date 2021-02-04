@@ -1,3 +1,4 @@
+#include <mutex>
 #pragma once
 
 /*
@@ -23,4 +24,22 @@ public:
 	bool pop(void** data);
 
 	int get_count() const;
+
+private:
+	unsigned int count; // number of elements in queue
+	node* head;			// head node of the queue
+	node* tail;			// tail node of the queue
+	std::mutex h_lock;	// mutex to lock the head
+	std::mutex t_lock;	// mutex to lock the tail
 };
+
+/*
+** Node class for the thread safe queue
+*/
+class node
+{
+public:
+	void* value;		// value stored by this node
+	node* next;			// next node
+};
+

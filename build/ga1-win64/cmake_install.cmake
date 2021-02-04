@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ameree/Downloads/ga2017-homework1-20200107T023108Z-001/ga2020-homework1/src/engine
+# Install script for directory: C:/Users/Dom/Documents/GameArch/homework-1-queuing-dfavs00/src/engine
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/ameree/Downloads/ga2017-homework1-20200107T023108Z-001/ga2020-homework1/build/ga1-win64/SDL2-2.0.5/cmake_install.cmake")
+  include("C:/Users/Dom/Documents/GameArch/homework-1-queuing-dfavs00/build/ga1-win64/SDL2-2.0.5/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/ameree/Downloads/ga2017-homework1-20200107T023108Z-001/ga2020-homework1/build/ga1-win64/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Dom/Documents/GameArch/homework-1-queuing-dfavs00/build/ga1-win64/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

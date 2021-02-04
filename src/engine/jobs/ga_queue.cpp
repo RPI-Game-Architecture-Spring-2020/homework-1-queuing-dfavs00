@@ -16,6 +16,17 @@ ga_queue::ga_queue(int node_count)
 	// For extra credit, preallocate 'node_count' elements (instead of
 	// allocating on push).
 	// See https://www.research.ibm.com/people/m/michael/podc-1996.pdf
+
+	// create node in heap memory
+	node* new_node = new node;
+	new_node->next = NULL;
+
+	head = new_node;
+	tail = new_node;
+
+	// set the lock on the head node to open
+	h_lock.unlock();
+	t_lock.unlock();
 }
 
 ga_queue::~ga_queue()
@@ -23,6 +34,17 @@ ga_queue::~ga_queue()
 	// TODO:
 	// Free any resources held by the queue.
 	// See https://www.research.ibm.com/people/m/michael/podc-1996.pdf
+
+	// cycle through nodes in the queue starting
+	// from tail until reaching head
+	node* current = head;
+	while (current != NULL) {
+
+		// delete current node but keep track of next node
+		node* temp = current->next;
+		delete current;
+		current = temp;
+	}
 }
 
 void ga_queue::push(void* data)
@@ -33,6 +55,15 @@ void ga_queue::push(void* data)
 	// this function is called, you must block until another thread pops an
 	// element off the queue.
 	// See https://www.research.ibm.com/people/m/michael/podc-1996.pdf
+
+	node* new_node;
+	new_node->value = data;
+	new_node->next = NULL;
+	
+	t_lock.lock();			// lock tail
+	tail->next = new_node;	// current tails next set to new node
+	tail = new_node;		// new tail set to current node
+	t_lock.unlock();		// unlock tail
 }
 
 bool ga_queue::pop(void** data)

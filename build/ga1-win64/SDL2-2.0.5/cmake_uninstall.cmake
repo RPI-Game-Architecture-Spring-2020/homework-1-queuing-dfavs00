@@ -1,8 +1,8 @@
-if (NOT EXISTS "C:/Users/ameree/Downloads/ga2017-homework1-20200107T023108Z-001/ga2020-homework1/build/ga1-win64/SDL2-2.0.5/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: \"C:/Users/ameree/Downloads/ga2017-homework1-20200107T023108Z-001/ga2020-homework1/build/ga1-win64/SDL2-2.0.5/install_manifest.txt\"")
-endif(NOT EXISTS "C:/Users/ameree/Downloads/ga2017-homework1-20200107T023108Z-001/ga2020-homework1/build/ga1-win64/SDL2-2.0.5/install_manifest.txt")
+if (NOT EXISTS "C:/Users/Dom/Documents/GameArch/homework-1-queuing-dfavs00/build/ga1-win64/SDL2-2.0.5/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"C:/Users/Dom/Documents/GameArch/homework-1-queuing-dfavs00/build/ga1-win64/SDL2-2.0.5/install_manifest.txt\"")
+endif(NOT EXISTS "C:/Users/Dom/Documents/GameArch/homework-1-queuing-dfavs00/build/ga1-win64/SDL2-2.0.5/install_manifest.txt")
 
-file(READ "C:/Users/ameree/Downloads/ga2017-homework1-20200107T023108Z-001/ga2020-homework1/build/ga1-win64/SDL2-2.0.5/install_manifest.txt" files)
+file(READ "C:/Users/Dom/Documents/GameArch/homework-1-queuing-dfavs00/build/ga1-win64/SDL2-2.0.5/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 foreach (file ${files})
     message(STATUS "Uninstalling \"$ENV{DESTDIR}${file}\"")
