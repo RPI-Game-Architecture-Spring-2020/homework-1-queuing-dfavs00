@@ -16,6 +16,13 @@
 */
 class ga_queue
 {
+	// Node struct for a thread safe queue
+	struct node
+	{
+		void* _value;		// value stored by this node
+		node* _next;			// next node
+	};
+
 public:
 	ga_queue(int node_count);
 	~ga_queue();
@@ -26,20 +33,9 @@ public:
 	int get_count() const;
 
 private:
-	unsigned int count; // number of elements in queue
-	node* head;			// head node of the queue
-	node* tail;			// tail node of the queue
-	std::mutex h_lock;	// mutex to lock the head
-	std::mutex t_lock;	// mutex to lock the tail
+	unsigned int _count;	// number of elements in the queue
+	node* _head;			// head node of the queue
+	node* _tail;			// tail node of the queue
+	std::mutex _h_lock;		// mutex to lock the head
+	std::mutex _t_lock;		// mutex to lock the tail
 };
-
-/*
-** Node class for the thread safe queue
-*/
-class node
-{
-public:
-	void* value;		// value stored by this node
-	node* next;			// next node
-};
-

@@ -19,14 +19,15 @@ ga_queue::ga_queue(int node_count)
 
 	// create node in heap memory
 	node* new_node = new node;
-	new_node->next = NULL;
+	new_node->_next = NULL;
 
-	head = new_node;
-	tail = new_node;
+	_head = new_node;
+	_tail = new_node;
 
-	// set the lock on the head node to open
-	h_lock.unlock();
-	t_lock.unlock();
+	// mutexes are unlocked by default
+
+	// original count is zero since this first node is only a dummy node
+	_count = 0;
 }
 
 ga_queue::~ga_queue()
@@ -37,11 +38,12 @@ ga_queue::~ga_queue()
 
 	// cycle through nodes in the queue starting
 	// from tail until reaching head
-	node* current = head;
-	while (current != NULL) {
+	node* current = _head;
+	while (current != NULL) 
+	{
 
 		// delete current node but keep track of next node
-		node* temp = current->next;
+		node* temp = current->_next;
 		delete current;
 		current = temp;
 	}
@@ -56,14 +58,15 @@ void ga_queue::push(void* data)
 	// element off the queue.
 	// See https://www.research.ibm.com/people/m/michael/podc-1996.pdf
 
-	node* new_node;
-	new_node->value = data;
-	new_node->next = NULL;
+	node* new_node = new node;
+	new_node->_value = data;
+	new_node->_next = NULL;
 	
-	t_lock.lock();			// lock tail
-	tail->next = new_node;	// current tails next set to new node
-	tail = new_node;		// new tail set to current node
-	t_lock.unlock();		// unlock tail
+	_t_lock.lock();			// lock tail
+	_tail->_next = new_node;	// current tails next set to new node
+	_tail = new_node;		// new tail set to current node
+	_count += 1;
+	_t_lock.unlock();		// unlock tail
 }
 
 bool ga_queue::pop(void** data)
@@ -74,12 +77,30 @@ bool ga_queue::pop(void** data)
 	// If the queue is empty when this function is called, return false.
 	// Otherwise return true.
 	// See https://www.research.ibm.com/people/m/michael/podc-1996.pdf
-	return false;
+	
+	_h_lock.lock();	// lock head since it will be accessed
+	node* temp_head_node = _head;
+	node* new_head = temp_head_node->_next;
+	// check if the queue is empty
+	if (new_head == NULL) 
+	{
+		_h_lock.unlock();
+		return false;
+	}
+	
+	// point data at the memory location stored by _value in head
+	*data = new_head->_value;
+	_head = new_head;
+	_count -= 1;
+	_h_lock.unlock();	// unlock head no longer needed
+
+	delete temp_head_node;
+	return true;
 }
 
 int ga_queue::get_count() const
 {
 	// TODO:
 	// Get the number of elements currently in the queue.
-	return 0;
+	return _count;
 }
