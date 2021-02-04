@@ -11,13 +11,7 @@
 
 ga_queue::ga_queue(int node_count)
 {
-	// TODO:
-	// Initialize the queue.
-	// For extra credit, preallocate 'node_count' elements (instead of
-	// allocating on push).
-	// See https://www.research.ibm.com/people/m/michael/podc-1996.pdf
-
-	// create node in heap memory
+	// create new head node in heap memory
 	node* new_node = new node;
 	new_node->_next = NULL;
 
@@ -32,10 +26,6 @@ ga_queue::ga_queue(int node_count)
 
 ga_queue::~ga_queue()
 {
-	// TODO:
-	// Free any resources held by the queue.
-	// See https://www.research.ibm.com/people/m/michael/podc-1996.pdf
-
 	// cycle through nodes in the queue starting
 	// from tail until reaching head
 	node* current = _head;
@@ -51,13 +41,6 @@ ga_queue::~ga_queue()
 
 void ga_queue::push(void* data)
 {
-	// TODO:
-	// Push 'data' onto the queue in a thread-safe manner.
-	// If you preallocated 'node_count' elements, and if the queue is full when
-	// this function is called, you must block until another thread pops an
-	// element off the queue.
-	// See https://www.research.ibm.com/people/m/michael/podc-1996.pdf
-
 	node* new_node = new node;
 	new_node->_value = data;
 	new_node->_next = NULL;
@@ -71,13 +54,6 @@ void ga_queue::push(void* data)
 
 bool ga_queue::pop(void** data)
 {
-	// TODO:
-	// Pop one element off the queue in a thread-safe manner and place it in
-	// the memory pointed to by 'data'.
-	// If the queue is empty when this function is called, return false.
-	// Otherwise return true.
-	// See https://www.research.ibm.com/people/m/michael/podc-1996.pdf
-	
 	_h_lock.lock();	// lock head since it will be accessed
 	node* temp_head_node = _head;
 	node* new_head = temp_head_node->_next;
@@ -100,7 +76,5 @@ bool ga_queue::pop(void** data)
 
 int ga_queue::get_count() const
 {
-	// TODO:
-	// Get the number of elements currently in the queue.
 	return _count;
 }
